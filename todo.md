@@ -7,7 +7,7 @@
 ## 网络通信
 + [TCP三次握手过程和四次断开连接](http://blog.csdn.net/jw212/article/details/5861022)
 
-+ [99%的人都理解错了HTTP中GET与POST的区别](http://mp.weixin.qq.com/s?__biz=MzI3NzIzMzg3Mw%3D%3D&mid=100000054&idx=1&sn=71f6c214f3833d9ca20b9f7dcd9d33e4)
+
 
 ## 算法
 
