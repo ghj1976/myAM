@@ -3,6 +3,7 @@
 ## 微服务
 + [微服务模式系列之二：微服务架构](http://mp.weixin.qq.com/s?__biz=MzI5MDEzMzg5Nw==&mid=2660393921&idx=1&sn=7f96e9a3a1cb73bb41ed9338e1f64110&chksm=f7424127c035c8318857c7643fa9560908f6d69bf6ccfb6d468ad7ca20961784ed7a059552d5&mpshare=1&scene=1&srcid=0929c0yZ9Sx31F1LEZcsyZnn#rd)
 
++ [微服务架构强化的实时通信](http://dockone.io/article/1795)
 
 ## 网络通信
 + [TCP三次握手过程和四次断开连接](http://blog.csdn.net/jw212/article/details/5861022)
@@ -12,6 +13,8 @@
 ## 算法
 
 [《知其所以然之永不遗忘的算法》初次学习快速排序、Huffman、KMP、Dijkstra等经典算法时我们惊叹于算法的巧妙。于是，我们仔细研读算法的每一步，甚至去证明算法的正确性，或者是去尝试优雅地实现这些算法。](http://blog.jobbole.com/106819/)
+
++ [判断链表是否有环](http://blog.jobbole.com/107601/)
 
 ## 
 
@@ -27,3 +30,6 @@
 
 
 [十年，从网管到首席架构师，我的成长感悟](http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2650994492&idx=1&sn=e6a6754f3628f38caa3b38420dcdbb69)
+
+
++ [新形势下的推送系统架构升级](http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2650994697&idx=2&sn=ca28deb8803511575b01bc4f07a367d4)
