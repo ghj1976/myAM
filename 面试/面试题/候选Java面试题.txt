@@ -1,0 +1,70 @@
+String 和StringBuffer的区别
+JAVA平台提供了两个类：String和StringBuffer，它们可以储存和操作字符串，即包含多个字符的字符数据。这个String类提供了数值不可改变的字符串。而这个StringBuffer类提供的字符串进行修改。当你知道字符数据要改变的时候你就可以使用StringBuffer。典型地，你可以使用StringBuffers来动态构造字符数据。
+
+
+
+String s = new String("xyz");创建了几个String Object? 
+两个对象，一个是“xyx”,一个是指向“xyx”的引用对象s。
+
+
+设计4个线程，其中两个线程每次对j增加1，另外两个线程对j每次减少1。写出程序。
+以下程序使用内部类实现线程，对j增减的时候没有考虑顺序问题。
+public class ThreadTest1{
+private int j;
+public static void main(String args[]){
+ThreadTest1 tt=new ThreadTest1();
+Inc inc=tt.new Inc();
+Dec dec=tt.new Dec();
+for(int i=0;i<2;i++){
+Thread t=new Thread(inc);
+t.start();
+t=new Thread(dec);
+t.start();
+}
+}
+private synchronized void inc(){
+j++;
+System.out.println(Thread.currentThread().getName()+"-inc:"+j);
+}
+private synchronized void dec(){
+j--;
+System.out.println(Thread.currentThread().getName()+"-dec:"+j);
+}
+class Inc implements Runnable{
+public void run(){
+for(int i=0;i<100;i++){
+inc();
+}
+}
+}
+class Dec implements Runnable{
+public void run(){
+for(int i=0;i<100;i++){
+dec();
+}
+}
+}
+}
+
+
+try {}里有一个return语句，那么紧跟在这个try后的finally {}里的code会不会被执行，什么时候被执行，在return前还是后?
+会执行，在return前执行。
+
+
+垃圾回收的优点和原理。并考虑2种回收机制。
+Java语言中一个显著的特点就是引入了垃圾回收机制，使c++程序员最头疼的内存管理的问题迎刃而解，它使得Java程序员在编写程序的时候不再需要考虑内存管理。由于有个垃圾回收机制，Java中的对象不再有“作用域”的概念，只有对象的引用才有“作用域”。垃圾回收可以有效的防止内存泄露，有效的使用可以使用的内存。垃圾回收器通常是作为一个单独的低级别的线程运行，不可预知的情况下对内存堆中已经死亡的或者长时间没有使用的对象进行清楚和回收，程序员不能实时的调用垃圾回收器对某个对象或所有对象进行垃圾回收。回收机制有分代复制垃圾回收和标记垃圾回收，增量垃圾回收。
+
+
+所有的递归实现都可以用循环的方式实现，请描述一下这两种实现方式各自的优劣。 
+并举例说明在什么情况下可以使用递归，而在什么情况下只能使用循环而不能使用递归？(5) 
+
+
+在J2EE中有一个“容器（Container）”的概念，不管是EJB、PICO还是Spring都有他们 
+各自实现的容器，受容器管理的组件会具有有生命周期的特性，请问，为什么需要容器？ 
+它的好处在哪里？它会带来什么样的问题？(15) 
+
+
+
+描述在浏览器中敲入一个网址后所发生的事情
+.dns,cache等
+
